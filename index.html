@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Lakshmikanth Manibolu | AI/ML Engineer & Full-Stack AI Developer</title>
+  <meta name="title" content="Lakshmikanth Manibolu | AI/ML Engineer & Full-Stack AI Developer" />
+  <meta name="description" content="Portfolio of Lakshmikanth Manibolu — AI/ML Engineer specializing in Deep Learning (RNN, CNN, ANN, PyTorch, TensorFlow), LangGraph AI Agents, and Full-Stack production deployment." />
+  <meta name="keywords" content="Lakshmikanth Manibolu, AI Engineer, Machine Learning, Deep Learning, Python, TensorFlow, PyTorch, LangGraph, React, FastAPI, Full Stack AI, Portfolio" />
+  <meta name="author" content="Lakshmikanth Manibolu" />
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lakshmikanthmanibolu.github.io/" />
+  <meta property="og:title" content="Lakshmikanth Manibolu | AI/ML Engineer Portfolio" />
+  <meta property="og:description" content="AI/ML Engineer with hands-on experience in Deep Learning, LangGraph AI Agents, and end-to-end full-stack ML deployments." />
+  <meta property="og:image" content="assets/images/project-crm.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Lakshmikanth Manibolu | AI/ML Engineer Portfolio" />
+  <meta property="twitter:description" content="AI/ML Engineer with hands-on experience in Deep Learning, LangGraph AI Agents, and end-to-end full-stack ML deployments." />
+  <meta property="twitter:image" content="assets/images/project-crm.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Remixicon / Lucide Icons via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-theme">
+  <!-- Interactive Neural Network Canvas Background -->
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- Sound & Audio Feedback Controls -->
+  <div class="audio-control-fixed" id="audio-toggle-btn" title="Toggle UI Sound Effects" aria-label="Toggle UI Sound Effects">
+    <i class="ri-volume-up-line" id="audio-icon"></i>
+    <span class="audio-tooltip">Sound: ON</span>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo" aria-label="Lakshmikanth Manibolu Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">LM</span>
+        <span class="logo-bracket">/&gt;</span>
+        <span class="logo-pulse-dot"></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active"><i class="ri-home-4-line"></i> Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link"><i class="ri-user-3-line"></i> About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link"><i class="ri-cpu-line"></i> Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link"><i class="ri-code-box-line"></i> Projects</a></li>
+          <li class="nav-item"><a href="#ai-lab" class="nav-link lab-nav"><i class="ri-flask-line"></i> AI Lab <span class="badge-mini">Live</span></a></li>
+          <li class="nav-item"><a href="#journey" class="nav-link"><i class="ri-time-line"></i> Journey</a></li>
+          <li class="nav-item"><a href="#terminal" class="nav-link"><i class="ri-terminal-box-line"></i> CLI</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><i class="ri-mail-send-line"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav CTA & Actions -->
+      <div class="nav-actions">
+        <button class="btn btn-outline-glow btn-sm resume-trigger-btn" id="resume-open-btn">
+          <i class="ri-file-text-line"></i> <span>View Resume</span>
+        </button>
+        <a href="#contact" class="btn btn-primary-glow btn-sm">
+          <span>Let's Talk</span> <i class="ri-arrow-right-up-line"></i>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <!-- Status Tag -->
+          <div class="status-badge">
+            <span class="pulsing-beacon"></span>
+            <span class="status-text">Available for AI/ML Roles • Immediate Joiner</span>
+          </div>
+
+          <!-- Greeting & Main Heading -->
+          <p class="hero-greeting">Hi there, I am</p>
+          <h1 class="hero-title">
+            <span class="hero-name-gradient">Lakshmikanth</span>
+            <br />
+            <span class="hero-surname">Manibolu</span>
+          </h1>
+
+          <!-- Dynamic Role Typewriter -->
+          <div class="typewriter-container">
+            <span class="typewriter-prefix">Specialized in&nbsp;</span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <!-- Elevator Pitch -->
+          <p class="hero-bio">
+            AI/ML Engineer with hands-on experience in <strong>deep learning</strong>, <strong>neural networks (RNN, CNN, ANN)</strong>, and <strong>autonomous AI agents (LangGraph)</strong>. Armed with end-to-end full-stack capabilities (FastAPI, React.js, Flask, Spring Boot) to translate complex research models into high-impact production applications.
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary-glow">
+              <i class="ri-sparkling-fill"></i>
+              <span>Explore Projects</span>
+            </a>
+            <a href="#ai-lab" class="btn btn-accent-glow">
+              <i class="ri-play-circle-line"></i>
+              <span>Try Live AI Demos</span>
+            </a>
+            <button class="btn btn-outline resume-trigger-btn" id="hero-resume-btn">
+              <i class="ri-download-2-line"></i>
+              <span>Resume (CV)</span>
+            </button>
+          </div>
+
+          <!-- Quick Social Links -->
+          <div class="hero-social-strip">
+            <span class="social-label">Connect & Repos:</span>
+            <a href="https://github.com/Lakshmikanthmanibolu" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+              <i class="ri-github-fill"></i>
+            </a>
+            <a href="mailto:lakshmikanthmanibolu@gmail.com" class="social-link" title="Email Me">
+              <i class="ri-mail-line"></i>
+            </a>
+            <a href="tel:+919652999701" class="social-link" title="Call Me">
+              <i class="ri-phone-line"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+              <i class="ri-linkedin-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3D Interactive Hero Card & Avatar -->
+        <div class="hero-visual">
+          <div class="hero-card-3d" id="hero-tilt-card">
+            <div class="hero-avatar-wrapper">
+              <div class="hologram-ring ring-1"></div>
+              <div class="hologram-ring ring-2"></div>
+              <div class="avatar-glow"></div>
+              <img src="assets/images/avatar.jpg" alt="Lakshmikanth Manibolu - AI/ML Engineer" class="hero-avatar-img" fetchpriority="high" />
+            </div>
+
+            <!-- Floating Tech Badges on Avatar -->
+            <div class="floating-badge badge-top-left">
+              <i class="ri-heart-pulse-fill icon-pulse"></i>
+              <div>
+                <strong>95% Accuracy</strong>
+                <span>RNN Heart Model</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-right">
+              <i class="ri-robot-2-line icon-agent"></i>
+              <div>
+                <strong>LangGraph AI</strong>
+                <span>ReAct 5-Tool Agent</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <i class="ri-cpu-line"></i>
+              <div>
+                <strong>B.Tech AIML</strong>
+                <span>7.50 GPA Graduate</span>
+              </div>
+            </div>
+
+            <!-- Real-time Status Card Footer -->
+            <div class="hero-card-footer">
+              <div class="terminal-mini-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="mini-title">lakshmikanth@ai-core: ready</span>
+              </div>
+              <p class="mini-code-line">
+                <code>&gt; PyTorch, TensorFlow, FastAPI, React 19 deployed.</code>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Counter Ribbon -->
+      <div class="metrics-ribbon">
+        <div class="container metrics-grid">
+          <div class="metric-card">
+            <div class="metric-number"><span class="counter" data-target="95">0</span><span class="metric-symbol">%</span></div>
+            <div class="metric-label">Heart Disease Deep Learning Accuracy</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number"><span class="counter" data-target="5">0</span><span class="metric-symbol">+</span></div>
+            <div class="metric-label">Autonomous LangGraph Agent Tools</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number"><span class="counter" data-target="100">0</span><span class="metric-symbol">%</span></div>
+            <div class="metric-label">End-to-End Pipeline & Full-Stack Ready</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number"><span class="counter" data-target="4">0</span><span class="metric-symbol">+</span></div>
+            <div class="metric-label">Industry Certifications (IBM, Tap, DLK)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="ri-user-smile-line"></i> Engineering Profile</span>
+          <h2 class="section-title">Bridging Machine Learning Research with Production Software</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel">
+            <div class="about-icon-header">
+              <i class="ri-brain-line"></i>
+              <h3>Who I Am</h3>
+            </div>
+            <p>
+              I am an <strong>AI/ML Engineer</strong> with a Bachelor of Technology in <strong>Computer Science Engineering (AIML)</strong> from Sreenivasa Institute of Technology and Management Studies.
+            </p>
+            <p>
+              My passion lies at the intersection of mathematical machine learning algorithms and robust software engineering. Rather than stopping at Jupyter notebooks, I specialize in architecting the complete lifecycle: from data cleaning, exploratory data analysis, and feature engineering, to deep neural network training (ANN, CNN, RNN), and deploying them via production REST APIs (FastAPI, Flask) wrapped in responsive web frontends.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="ri-check-double-line"></i>
+                <span>Deep Learning Architecture (TensorFlow & PyTorch)</span>
+              </div>
+              <div class="highlight-item">
+                <i class="ri-check-double-line"></i>
+                <span>Autonomous Agentic AI (LangGraph & Groq LLMs)</span>
+              </div>
+              <div class="highlight-item">
+                <i class="ri-check-double-line"></i>
+                <span>Full-Stack Support (FastAPI, React.js, Spring Boot)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-details-card glass-panel">
+            <div class="about-icon-header">
+              <i class="ri-terminal-window-line"></i>
+              <h3>Core Engineering Pillars</h3>
+            </div>
+
+            <div class="pillar-box">
+              <div class="pillar-icon"><i class="ri-microscope-line"></i></div>
+              <div class="pillar-info">
+                <h4>Predictive & Deep Learning</h4>
+                <p>Model development using RNNs, CNNs, ANNs, and Scikit-learn with rigorous evaluation metrics (ROC-AUC, Precision, Recall, F1).</p>
+              </div>
+            </div>
+
+            <div class="pillar-box">
+              <div class="pillar-icon"><i class="ri-robot-line"></i></div>
+              <div class="pillar-info">
+                <h4>GenAI & Agent Workflows</h4>
+                <p>Building ReAct agents with LangGraph, tool calling, memory management, and Groq ultra-low-latency LLM inference.</p>
+              </div>
+            </div>
+
+            <div class="pillar-box">
+              <div class="pillar-icon"><i class="ri-server-line"></i></div>
+              <div class="pillar-info">
+                <h4>Full-Stack & Cloud Deployment</h4>
+                <p>Developing scalable REST APIs with FastAPI, Flask, and Spring Boot; frontend interfaces with React 19 and Redux; live Vercel deployments.</p>
+              </div>
+            </div>
+
+            <div class="quick-info-chips">
+              <div class="chip"><i class="ri-map-pin-line"></i> Andhra Pradesh, India</div>
+              <div class="chip"><i class="ri-mail-line"></i> lakshmikanthmanibolu@gmail.com</div>
+              <div class="chip"><i class="ri-phone-line"></i> +91-9652999701</div>
+              <div class="chip"><i class="ri-github-line"></i> github.com/Lakshmikanthmanibolu</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="ri-tools-line"></i> Technical Arsenal</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">Categorized breakdown of competencies across AI/ML pipelines, programming languages, and full-stack ecosystems.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skill-tabs-nav" role="tablist">
+          <button class="skill-tab active" data-category="all" role="tab" aria-selected="true">All Skills</button>
+          <button class="skill-tab" data-category="aiml" role="tab" aria-selected="false">AI & Machine Learning</button>
+          <button class="skill-tab" data-category="deeplearning" role="tab" aria-selected="false">Deep Learning & CV</button>
+          <button class="skill-tab" data-category="programming" role="tab" aria-selected="false">Programming & Core CS</button>
+          <button class="skill-tab" data-category="fullstack" role="tab" aria-selected="false">Full-Stack & Backend</button>
+          <button class="skill-tab" data-category="tools" role="tab" aria-selected="false">Libraries & Tools</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skills-container">
+          <!-- AI & ML -->
+          <div class="skill-item-card glass-panel" data-category="aiml">
+            <div class="skill-icon-wrapper aiml-accent"><i class="ri-brain-fill"></i></div>
+            <div class="skill-meta">
+              <h4>Supervised & Unsupervised Learning</h4>
+              <span class="skill-level">Model Training & Predictive Modeling</span>
+            </div>
+            <div class="skill-tags">
+              <span>Classification</span><span>Regression</span><span>Clustering</span><span>Feature Eng.</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card glass-panel" data-category="aiml">
+            <div class="skill-icon-wrapper aiml-accent"><i class="ri-line-chart-fill"></i></div>
+            <div class="skill-meta">
+              <h4>Model Evaluation & Metrics</h4>
+              <span class="skill-level">Validation & Hyperparameter Tuning</span>
+            </div>
+            <div class="skill-tags">
+              <span>ROC-AUC</span><span>Cross-Validation</span><span>Confusion Matrix</span><span>GridSearchCV</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card glass-panel" data-category="aiml">
+            <div class="skill-icon-wrapper aiml-accent"><i class="ri-database-2-fill"></i></div>
+            <div class="skill-meta">
+              <h4>Data Preprocessing & Cleaning</h4>
+              <span class="skill-level">Exploratory Data Analysis</span>
+            </div>
+            <div class="skill-tags">
+              <span>Pandas</span><span>NumPy</span><span>Outlier Detection</span><span>Data Imputation</span>
+            </div>
+          </div>
+
+          <!-- Deep Learning & CV -->
+          <div class="skill-item-card glass-panel" data-category="deeplearning">
+            <div class="skill-icon-wrapper dl-accent"><i class="ri-cpu-fill"></i></div>
+            <div class="skill-meta">
+              <h4>TensorFlow & PyTorch</h4>
+              <span class="skill-level">Neural Network Frameworks</span>
+            </div>
+            <div class="skill-tags">
+              <span>Tensors</span><span>Autograd</span><span>Keras API</span><span>Loss Functions</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card glass-panel" data-category="deeplearning">
+            <div class="skill-icon-wrapper dl-accent"><i class="ri-pulse-line"></i></div>
+            <div class="skill-meta">
+              <h4>RNN, LSTM & Sequential Models</h4>
+              <span class="skill-level">Time Series & Prediction</span>
+            </div>
+            <div class="skill-tags">
+              <span>Recurrent Units</span><span>Heart Disease (95%)</span><span>Sequential Data</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card glass-panel" data-category="deeplearning">
+            <div class="skill-icon-wrapper dl-accent"><i class="ri-eye-line"></i></div>
+            <div class="skill-meta">
+              <h4>CNN & Computer Vision</h4>
+              <span class="skill-level">Image Processing & Object Detection</span>
+            </div>
+            <div class="skill-tags">
+              <span>OpenCV</span><span>Feature Maps</span><span>Pooling</span><span>Image Filters</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card glass-panel" data-category="deeplearning">
+            <div class="skill-icon-wrapper dl-accent"><i class="ri-robot-line"></i></div>
+            <div class="skill-meta">
+              <h4>LangGraph & Groq LLMs</h4>
+              <span class="skill-level">Agentic AI & Tool Calling</span>
+            </div>
+            <div class="skill-tags">
+              <span>ReAct Agent</span><span>gemma2-9b-it</span><span>State History</span><span>5 Custom Tools</span>
+            </div>
+          </div>
+
+          <!-- Programming & Core CS -->
+          <div class="skill-item-card glass-panel" data-category="programming">
+            <div class="skill-icon-wrapper prog-accent"><i class="ri-code-s-slash-line"></i></div>
+            <div class="skill-meta">
+              <h4>Python</h4>
+              <span class="skill-level">Primary AI/ML Language</span>
+            </div>
+            <div class="skill-tags">
+              <span>OOP</span><span>Decorators</span><span>AsyncIO</span><span>Data Analysis</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card glass-panel" data-category="programming">
+            <div class="skill-icon-wrapper prog-accent"><i class="ri-cup-line"></i></div>
+            <div class="skill-meta">
+              <h4>Java</h4>
+              <span class="skill-level">Enterprise & Core CS</span>
+            </div>
+            <div class="skill-tags">
+              <span>Core Java</span><span>Collections</span><span>Multithreading</span><span>JDBC</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card glass-panel" data-category="programming">
+            <div class="skill-icon-wrapper prog-accent"><i class="ri-javascript-line"></i></div>
+            <div class="skill-meta">
+              <h4>JavaScript (ES6+)</h4>
+              <span class="skill-level">Modern Web & Async JS</span>
+            </div>
+            <div class="skill-tags">
+              <span>Promises</span><span>DOM Manipulation</span><span>Fetch API</span><span>Modules</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card glass-panel" data-category="programming">
+            <div class="skill-icon-wrapper prog-accent"><i class="ri-node-tree"></i></div>
+            <div class="skill-meta">
+              <h4>Data Structures & Algorithms (DSA)</h4>
+              <span class="skill-level">Problem Solving & Optimization</span>
+            </div>
+            <div class="skill-tags">
+              <span>Arrays & Trees</span><span>Graphs</span><span>Time Complexity</span><span>Recursion</span>
+            </div>
+          </div>
+
+          <!-- Full Stack & Backend -->
+          <div class="skill-item-card glass-panel" data-category="fullstack">
+            <div class="skill-icon-wrapper stack-accent"><i class="ri-flashlight-line"></i></div>
+            <div class="skill-meta">
+              <h4>FastAPI & Flask</h4>
+              <span class="skill-level">High-Performance ML REST APIs</span>
+            </div>
+            <div class="skill-tags">
+              <span>Pydantic</span><span>Swagger/OpenAPI</span><span>Model Serving</span><span>CORS</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card glass-panel" data-category="fullstack">
+            <div class="skill-icon-wrapper stack-accent"><i class="ri-reactjs-line"></i></div>
+            <div class="skill-meta">
+              <h4>React.js 19 & Redux Toolkit</h4>
+              <span class="skill-level">Frontend State & Component Trees</span>
+            </div>
+            <div class="skill-tags">
+              <span>Hooks</span><span>Redux Slices</span><span>Dual-Mode UI</span><span>Vercel Deploy</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card glass-panel" data-category="fullstack">
+            <div class="skill-icon-wrapper stack-accent"><i class="ri-server-fill"></i></div>
+            <div class="skill-meta">
+              <h4>Spring Boot & Hibernate</h4>
+              <span class="skill-level">Java Enterprise Microservices</span>
+            </div>
+            <div class="skill-tags">
+              <span>Spring MVC</span><span>JPA / Hibernate</span><span>RESTful Controllers</span><span>ORM</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card glass-panel" data-category="fullstack">
+            <div class="skill-icon-wrapper stack-accent"><i class="ri-database-line"></i></div>
+            <div class="skill-meta">
+              <h4>SQL, SQLite & MongoDB</h4>
+              <span class="skill-level">Relational & NoSQL Databases</span>
+            </div>
+            <div class="skill-tags">
+              <span>SQLAlchemy</span><span>Complex Joins</span><span>Schema Design</span><span>Transactions</span>
+            </div>
+          </div>
+
+          <!-- Tools & Libraries -->
+          <div class="skill-item-card glass-panel" data-category="tools">
+            <div class="skill-icon-wrapper tool-accent"><i class="ri-git-branch-line"></i></div>
+            <div class="skill-meta">
+              <h4>Git & GitHub</h4>
+              <span class="skill-level">Version Control & Collaboration</span>
+            </div>
+            <div class="skill-tags">
+              <span>Branching</span><span>Pull Requests</span><span>CI/CD Setup</span><span>Open Source</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card glass-panel" data-category="tools">
+            <div class="skill-icon-wrapper tool-accent"><i class="ri-terminal-box-line"></i></div>
+            <div class="skill-meta">
+              <h4>Scikit-learn, NumPy & Pandas</h4>
+              <span class="skill-level">Scientific Computing & Wrangling</span>
+            </div>
+            <div class="skill-tags">
+              <span>DataFrames</span><span>Vectorization</span><span>Pipelines</span><span>Matplotlib</span>
+            </div>
+          </div>
+
+          <div class="skill-item-card glass-panel" data-category="tools">
+            <div class="skill-icon-wrapper tool-accent"><i class="ri-shield-keyhole-line"></i></div>
+            <div class="skill-meta">
+              <h4>JWT Auth & REST Security</h4>
+              <span class="skill-level">API Authentication Protocols</span>
+            </div>
+            <div class="skill-tags">
+              <span>Tokens</span><span>Route Protection</span><span>Middleware</span><span>Security</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="ri-fire-line"></i> Production Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world AI systems, deep learning pipelines, and full-stack architectures engineered by Lakshmikanth.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="projects-list">
+          <!-- Project 1: AI-First CRM (HCP Module) -->
+          <article class="project-card glass-panel highlight-border">
+            <div class="project-image-box">
+              <img src="assets/images/project-crm.jpg" alt="CRM HCP Model — AI-First CRM Interface" class="project-img" loading="lazy" />
+              <div class="project-overlay">
+                <a href="https://github.com/Lakshmikanthmanibolu/ai-first-crm" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="View Source on GitHub">
+                  <i class="ri-github-fill"></i> View Repo
+                </a>
+                <a href="#ai-lab" class="overlay-btn accent-btn" title="Launch Interactive Simulation">
+                  <i class="ri-play-fill"></i> Simulate Agent
+                </a>
+              </div>
+              <span class="project-badge"><i class="ri-star-fill"></i> Flagship Project</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-category">Autonomous AI Agents • Healthcare SaaS</div>
+              <h3 class="project-title">CRM HCP Model — AI-First CRM (Healthcare Professional Module)</h3>
+              
+              <p class="project-desc">
+                An intelligent pharmaceutical CRM engineered for field medical representatives. Integrates a <strong>LangGraph ReAct agent</strong> powered by <strong>Groq LLM (gemma2-9b-it)</strong> equipped with 5 specialized tools to log meetings, edit HCP interactions, query physician history, and generate context-driven talking points.
+              </p>
+
+              <div class="project-highlights-list">
+                <div class="highlight-bullet">
+                  <i class="ri-checkbox-circle-fill"></i>
+                  <span><strong>LangGraph ReAct Loop:</strong> Autonomous 5-tool reasoning pathway (Log, Edit, Search, Retrieve, Suggest).</span>
+                </div>
+                <div class="highlight-bullet">
+                  <i class="ri-checkbox-circle-fill"></i>
+                  <span><strong>Dual-Mode Interface:</strong> Seamlessly switches between a structured clinical form and a conversational AI natural-language chat interface.</span>
+                </div>
+                <div class="highlight-bullet">
+                  <i class="ri-checkbox-circle-fill"></i>
+                  <span><strong>Full-Stack Architecture:</strong> FastAPI backend with SQLAlchemy/SQLite persistence + React 19 & Redux Toolkit UI deployed live on Vercel.</span>
+                </div>
+              </div>
+
+              <div class="tech-pill-container">
+                <span class="tech-pill">React 19</span>
+                <span class="tech-pill">Redux Toolkit</span>
+                <span class="tech-pill">FastAPI</span>
+                <span class="tech-pill">LangGraph</span>
+                <span class="tech-pill">Groq LLM (gemma2-9b-it)</span>
+                <span class="tech-pill">SQLite</span>
+                <span class="tech-pill">Vercel</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/Lakshmikanthmanibolu/ai-first-crm" target="_blank" rel="noopener noreferrer" class="btn btn-primary-glow btn-sm">
+                  <i class="ri-github-fill"></i> GitHub Repository
+                </a>
+                <button class="btn btn-outline btn-sm agent-demo-btn" onclick="switchLabTab('agent-demo')">
+                  <i class="ri-terminal-box-line"></i> Test Live in AI Lab
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Heart Disease Prediction using Deep Learning -->
+          <article class="project-card glass-panel reverse-card">
+            <div class="project-image-box">
+              <img src="assets/images/project-heart.jpg" alt="Heart Disease Prediction Deep Learning Dashboard" class="project-img" loading="lazy" />
+              <div class="project-overlay">
+                <a href="https://github.com/Lakshmikanthmanibolu" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="View Source on GitHub">
+                  <i class="ri-github-fill"></i> View Repo
+                </a>
+                <a href="#ai-lab" class="overlay-btn accent-btn" title="Run Simulator">
+                  <i class="ri-pulse-line"></i> Run Predictor
+                </a>
+              </div>
+              <span class="project-badge accuracy-badge"><i class="ri-award-fill"></i> 95% Accuracy Model</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-category">Deep Learning • Medical Diagnostics</div>
+              <h3 class="project-title">Heart Disease Prediction using Deep Neural Networks (RNN)</h3>
+              
+              <p class="project-desc">
+                A high-precision clinical decision support system utilizing a <strong>Recurrent Neural Network (RNN)</strong> architecture. Trained and validated on comprehensive cardiovascular health indicators to achieve <strong>95% prediction accuracy</strong>, complete with automated feature extraction, scaling, and real-time inference.
+              </p>
+
+              <div class="project-highlights-list">
+                <div class="highlight-bullet">
+                  <i class="ri-checkbox-circle-fill"></i>
+                  <span><strong>95% Model Accuracy:</strong> Outperformed standard baseline algorithms through custom RNN parameter tuning and feature scaling.</span>
+                </div>
+                <div class="highlight-bullet">
+                  <i class="ri-checkbox-circle-fill"></i>
+                  <span><strong>Flask REST API Deployment:</strong> Built low-latency microservice endpoint for instantaneous inference and clinical payload processing.</span>
+                </div>
+                <div class="highlight-bullet">
+                  <i class="ri-checkbox-circle-fill"></i>
+                  <span><strong>Interactive Visualization Dashboard:</strong> Clean, responsive UI with dynamic risk probability gauges and feature importance factors.</span>
+                </div>
+              </div>
+
+              <div class="tech-pill-container">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">RNN (Deep Learning)</span>
+                <span class="tech-pill">TensorFlow</span>
+                <span class="tech-pill">Flask REST API</span>
+                <span class="tech-pill">Scikit-learn</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">HTML5 & CSS3</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/Lakshmikanthmanibolu" target="_blank" rel="noopener noreferrer" class="btn btn-primary-glow btn-sm">
+                  <i class="ri-github-fill"></i> GitHub Profile
+                </a>
+                <button class="btn btn-outline btn-sm heart-demo-btn" onclick="switchLabTab('heart-demo')">
+                  <i class="ri-heart-pulse-line"></i> Run Live Diagnostic Simulator
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: AI Agent Orchestration & Transformer Pipeline -->
+          <article class="project-card glass-panel">
+            <div class="project-image-box">
+              <img src="assets/images/ai-architecture.jpg" alt="Autonomous AI System Architecture" class="project-img" loading="lazy" />
+              <div class="project-overlay">
+                <a href="https://github.com/Lakshmikanthmanibolu" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="View Source on GitHub">
+                  <i class="ri-github-fill"></i> View Repos
+                </a>
+              </div>
+              <span class="project-badge system-badge"><i class="ri-git-merge-line"></i> System Architecture</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-category">GenAI Systems • Agentic Frameworks</div>
+              <h3 class="project-title">Autonomous Agent Orchestration & Vector Retrieval Pipeline</h3>
+              
+              <p class="project-desc">
+                Architected an end-to-end framework integrating transformer-based embeddings, vector databases, and multi-turn agent state machines. Employs recursive self-correction, dynamic tool execution, and context-window compression for high-throughput enterprise knowledge tasks.
+              </p>
+
+              <div class="project-highlights-list">
+                <div class="highlight-bullet">
+                  <i class="ri-checkbox-circle-fill"></i>
+                  <span><strong>Vector Database Embeddings:</strong> High-dimensional indexing and semantic retrieval for real-time document grounding.</span>
+                </div>
+                <div class="highlight-bullet">
+                  <i class="ri-checkbox-circle-fill"></i>
+                  <span><strong>Recursive Thinking Loop:</strong> Self-reflecting prompt cycles to validate tool outputs prior to response emission.</span>
+                </div>
+              </div>
+
+              <div class="tech-pill-container">
+                <span class="tech-pill">LangGraph</span>
+                <span class="tech-pill">Vector Embeddings</span>
+                <span class="tech-pill">FastAPI</span>
+                <span class="tech-pill">PyTorch</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">SQLite / SQLAlchemy</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/Lakshmikanthmanibolu" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="ri-github-fill"></i> Explore on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE AI LAB & LIVE DEMOS -->
+    <section class="section ai-lab-section" id="ai-lab">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag accent-tag"><i class="ri-flask-fill"></i> Interactive Sandbox</span>
+          <h2 class="section-title">Live AI/ML Interactive Playground</h2>
+          <p class="section-subtitle">Test and interact with live working simulations of Lakshmikanth's actual portfolio models directly in your browser.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- Playground Selector Tabs -->
+        <div class="lab-switcher" role="tablist">
+          <button class="lab-tab active" id="tab-heart-demo" onclick="switchLabTab('heart-demo')" role="tab" aria-selected="true">
+            <i class="ri-heart-pulse-fill"></i>
+            <span>Heart Disease RNN Predictor (95% Accuracy)</span>
+          </button>
+          <button class="lab-tab" id="tab-agent-demo" onclick="switchLabTab('agent-demo')" role="tab" aria-selected="false">
+            <i class="ri-robot-2-fill"></i>
+            <span>LangGraph ReAct Agent (AI CRM Simulation)</span>
+          </button>
+        </div>
+
+        <!-- LAB DEMO 1: Heart Disease Predictor -->
+        <div class="lab-panel active" id="heart-demo-panel">
+          <div class="lab-grid">
+            <!-- Input Sliders Form -->
+            <div class="lab-inputs-card glass-panel">
+              <div class="lab-card-header">
+                <h3><i class="ri-sound-module-line"></i> Patient Clinical Inputs</h3>
+                <button class="btn-preset" id="preset-normal-btn" type="button">Load Healthy Sample</button>
+                <button class="btn-preset" id="preset-risk-btn" type="button">Load At-Risk Sample</button>
+              </div>
+
+              <form id="heart-predictor-form" onsubmit="return false;">
+                <div class="input-slider-group">
+                  <div class="slider-label-row">
+                    <label for="inp-age">Age</label>
+                    <span class="slider-val" id="val-age">52 yrs</span>
+                  </div>
+                  <input type="range" id="inp-age" min="25" max="80" value="52" class="range-slider" />
+                </div>
+
+                <div class="input-slider-group">
+                  <div class="slider-label-row">
+                    <label for="inp-bp">Resting Blood Pressure</label>
+                    <span class="slider-val" id="val-bp">132 mmHg</span>
+                  </div>
+                  <input type="range" id="inp-bp" min="90" max="200" value="132" class="range-slider" />
+                </div>
+
+                <div class="input-slider-group">
+                  <div class="slider-label-row">
+                    <label for="inp-chol">Serum Cholesterol</label>
+                    <span class="slider-val" id="val-chol">245 mg/dL</span>
+                  </div>
+                  <input type="range" id="inp-chol" min="120" max="420" value="245" class="range-slider" />
+                </div>
+
+                <div class="input-slider-group">
+                  <div class="slider-label-row">
+                    <label for="inp-maxhr">Max Heart Rate (Thalach)</label>
+                    <span class="slider-val" id="val-maxhr">150 bpm</span>
+                  </div>
+                  <input type="range" id="inp-maxhr" min="70" max="210" value="150" class="range-slider" />
+                </div>
+
+                <div class="form-row-2col">
+                  <div class="input-select-group">
+                    <label for="inp-cp">Chest Pain Type</label>
+                    <select id="inp-cp" class="custom-select">
+                      <option value="0">Typical Angina</option>
+                      <option value="1">Atypical Angina</option>
+                      <option value="2" selected>Non-anginal Pain</option>
+                      <option value="3">Asymptomatic</option>
+                    </select>
+                  </div>
+
+                  <div class="input-select-group">
+                    <label for="inp-ecg">Resting ECG</label>
+                    <select id="inp-ecg" class="custom-select">
+                      <option value="0" selected>Normal</option>
+                      <option value="1">ST-T Wave Abnormality</option>
+                      <option value="2">Left Ventricular Hypertrophy</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button class="btn btn-primary-glow btn-block" id="run-prediction-btn" type="button">
+                  <i class="ri-cpu-line"></i>
+                  <span>Execute RNN Model Inference</span>
+                </button>
+              </form>
+            </div>
+
+            <!-- Output Diagnostic Visualization -->
+            <div class="lab-output-card glass-panel">
+              <div class="lab-card-header">
+                <h3><i class="ri-dashboard-3-line"></i> Neural Inference Output</h3>
+                <span class="accuracy-tag">Model: RNN v2.4 (95% Accuracy)</span>
+              </div>
+
+              <!-- Animated Radial Risk Gauge -->
+              <div class="gauge-section">
+                <div class="radial-gauge-container">
+                  <svg class="radial-gauge-svg" viewBox="0 0 200 200">
+                    <circle class="gauge-bg" cx="100" cy="100" r="80"></circle>
+                    <circle class="gauge-progress" id="gauge-circle" cx="100" cy="100" r="80"></circle>
+                  </svg>
+                  <div class="gauge-inner-info">
+                    <span class="gauge-percent" id="gauge-percent-display">28%</span>
+                    <span class="gauge-status" id="gauge-status-display">Low Probability</span>
+                  </div>
+                </div>
+
+                <div class="diagnostic-summary" id="diagnostic-summary-box">
+                  <h4>Diagnostic Assessment:</h4>
+                  <p id="assessment-text">Calculated cardiovascular risk is within manageable parameters. Cholesterol and blood pressure are moderately elevated.</p>
+                </div>
+              </div>
+
+              <!-- Feature Impact Breakdown -->
+              <div class="feature-importance-box">
+                <h4>Top Contributing Factors:</h4>
+                <div class="factor-bar-row">
+                  <span class="factor-name">Serum Cholesterol:</span>
+                  <div class="factor-track"><div class="factor-fill" id="bar-chol" style="width: 58%;"></div></div>
+                  <span class="factor-val" id="text-bar-chol">Moderate</span>
+                </div>
+                <div class="factor-bar-row">
+                  <span class="factor-name">Resting Blood Pressure:</span>
+                  <div class="factor-track"><div class="factor-fill" id="bar-bp" style="width: 45%;"></div></div>
+                  <span class="factor-val" id="text-bar-bp">Normal</span>
+                </div>
+                <div class="factor-bar-row">
+                  <span class="factor-name">Max Heart Rate Target:</span>
+                  <div class="factor-track"><div class="factor-fill" id="bar-hr" style="width: 72%;"></div></div>
+                  <span class="factor-val" id="text-bar-hr">Optimal</span>
+                </div>
+              </div>
+
+              <!-- Neural Pipeline Log -->
+              <div class="neural-pipeline-status">
+                <span class="status-pulse-dot"></span>
+                <span class="pipeline-text" id="neural-status-text">Model: Ready for input changes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LAB DEMO 2: LangGraph ReAct Agent Simulator -->
+        <div class="lab-panel" id="agent-demo-panel">
+          <div class="agent-simulator-container glass-panel">
+            <div class="agent-sim-header">
+              <div class="agent-identity">
+                <div class="agent-avatar"><i class="ri-robot-2-line"></i></div>
+                <div>
+                  <h4>HCP AI ReAct Assistant (LangGraph + Groq LLM)</h4>
+                  <span class="agent-subtitle">Engineered by Lakshmikanth Manibolu • 5 Tool Execution Graph</span>
+                </div>
+              </div>
+              <div class="tools-active-badge">
+                <i class="ri-tools-fill"></i> Tools: Log | Edit | Search | History | TalkingPoints
+              </div>
+            </div>
+
+            <!-- Quick Prompt Suggestions -->
+            <div class="sample-prompts-bar">
+              <span class="sample-prompt-title">Try instant prompts:</span>
+              <button class="chip prompt-chip" onclick="executeAgentPrompt('Log interaction with Dr. Rao regarding oncology clinical trial results')">
+                "Log meeting with Dr. Rao"
+              </button>
+              <button class="chip prompt-chip" onclick="executeAgentPrompt('Suggest talking points for Dr. Emily Carter regarding Cardio-v4 efficacy')">
+                "Talking points for Dr. Carter"
+              </button>
+              <button class="chip prompt-chip" onclick="executeAgentPrompt('Retrieve past 3 interaction summaries for Cardiology department')">
+                "Retrieve past interaction history"
+              </button>
+            </div>
+
+            <!-- Agent Chat Display -->
+            <div class="agent-console-messages" id="agent-console">
+              <div class="agent-msg system-msg">
+                <i class="ri-information-line"></i>
+                <div>
+                  <strong>System Initialized:</strong> LangGraph ReAct pipeline loaded with Groq LLM (gemma2-9b-it) inference engine. Click a prompt above or type your instruction.
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat Input Bar -->
+            <div class="agent-input-bar">
+              <input type="text" id="agent-user-input" placeholder="Type a message or instruction for the AI CRM agent..." autocomplete="off" />
+              <button class="btn btn-primary-glow btn-sm" id="agent-send-btn" type="button">
+                <i class="ri-send-plane-2-fill"></i> Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & JOURNEY SECTION -->
+    <section class="section journey-section" id="journey">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="ri-route-line"></i> Career Roadmap</span>
+          <h2 class="section-title">Work Experience & Internships</h2>
+          <p class="section-subtitle">Real-world engineering impact across AI/ML development, full-stack web, and enterprise Java architectures.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Item 1: Web Development Intern -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="ri-layout-3-line"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Web Development Intern</h3>
+                  <h4 class="timeline-company"><i class="ri-building-line"></i> Internselite <span class="badge-tag">Remote</span></h4>
+                </div>
+                <span class="timeline-date"><i class="ri-calendar-line"></i> May 2026 – Jul 2026</span>
+              </div>
+              <p class="timeline-desc">
+                Built and maintained responsive UI components and REST API integrations, strengthening the full-stack foundation behind independently deployed AI applications.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Engineered clean, reusable frontend components adhering to modern reactive design principles.</li>
+                <li>Created and consumed RESTful endpoints for efficient client-server communication.</li>
+                <li>Streamlined deployment processes for decoupled web applications.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>React.js</span><span>JavaScript</span><span>REST APIs</span><span>UI/UX</span><span>Full Stack</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Java Full Stack Developer -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="ri-cup-line"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Java Full Stack Web Development</h3>
+                  <h4 class="timeline-company"><i class="ri-building-line"></i> Tap Academy <span class="badge-tag">Bangalore, India</span></h4>
+                </div>
+                <span class="timeline-date"><i class="ri-calendar-line"></i> Jun 2024 – Dec 2024</span>
+              </div>
+              <p class="timeline-desc">
+                Gained in-depth hands-on experience in Core Java, JDBC, SQL, Spring Boot, Hibernate, and REST APIs, applying object-oriented design principles in a comprehensive full-stack ecosystem.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Architected robust relational database schemas and optimized complex SQL queries with JDBC and Hibernate ORM.</li>
+                <li>Developed scalable RESTful web services utilizing Spring Boot controllers, dependency injection, and middleware.</li>
+                <li>Implemented clean OOP design patterns and unit tests to ensure high software reliability.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Core Java</span><span>Spring Boot</span><span>Hibernate</span><span>JDBC</span><span>SQL</span><span>OOP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: AI/ML Intern -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="ri-brain-line"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">AI / ML Intern</h3>
+                  <h4 class="timeline-company"><i class="ri-building-line"></i> Innovate <span class="badge-tag">Remote</span></h4>
+                </div>
+                <span class="timeline-date"><i class="ri-calendar-line"></i> Jan 2024 – May 2024</span>
+              </div>
+              <p class="timeline-desc">
+                Gained extensive hands-on experience in machine learning, deep learning, data preprocessing, feature engineering, model training, and performance evaluation.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Analyzed multi-dimensional datasets using Python, Pandas, NumPy, Scikit-learn, and TensorFlow.</li>
+                <li>Built predictive models and enhanced model accuracy through systematic feature selection, cross-validation, and hyperparameter tuning.</li>
+                <li>Engineered clean data transformation pipelines from raw ingestion to model inference.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Python</span><span>TensorFlow</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span><span>Deep Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS SECTION -->
+    <section class="section edu-cert-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="ri-graduation-cap-line"></i> Credentials & Knowledge</span>
+          <h2 class="section-title">Education & Certifications</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="edu-cert-grid">
+          <!-- Education Column -->
+          <div class="edu-column">
+            <h3 class="column-title"><i class="ri-book-open-line"></i> Formal Education</h3>
+
+            <div class="edu-card glass-panel">
+              <div class="edu-badge"><i class="ri-award-fill"></i> B.Tech (AIML)</div>
+              <h4 class="edu-degree">Bachelor of Technology — Computer Science Engineering (AIML)</h4>
+              <p class="edu-institution">Sreenivasa Institute of Technology and Management Studies</p>
+              <div class="edu-meta">
+                <span><i class="ri-map-pin-line"></i> Andhra Pradesh, India</span>
+                <span class="edu-gpa">GPA: <strong>7.50</strong></span>
+                <span><i class="ri-calendar-line"></i> Aug 2020 – May 2024</span>
+              </div>
+              <p class="edu-detail">Specialized coursework in Artificial Intelligence, Machine Learning, Deep Neural Networks, Algorithms, and Distributed Computing.</p>
+            </div>
+
+            <div class="edu-card glass-panel">
+              <div class="edu-badge">Intermediate</div>
+              <h4 class="edu-degree">Board of Intermediate Education (MPC)</h4>
+              <p class="edu-institution">Vijayam Junior College</p>
+              <div class="edu-meta">
+                <span><i class="ri-map-pin-line"></i> Andhra Pradesh, India</span>
+                <span class="edu-gpa">GPA: <strong>6.8</strong></span>
+                <span><i class="ri-calendar-line"></i> May 2018 – July 2020</span>
+              </div>
+            </div>
+
+            <div class="edu-card glass-panel">
+              <div class="edu-badge">Secondary School</div>
+              <h4 class="edu-degree">Board of Secondary Education (SSC)</h4>
+              <p class="edu-institution">Sri Chaitanya EM High School</p>
+              <div class="edu-meta">
+                <span><i class="ri-map-pin-line"></i> Andhra Pradesh, India</span>
+                <span class="edu-gpa">GPA: <strong>9.2</strong></span>
+                <span><i class="ri-calendar-line"></i> March 2018</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications Column -->
+          <div class="cert-column">
+            <h3 class="column-title"><i class="ri-verified-badge-line"></i> Industry Certifications & Awards</h3>
+
+            <div class="cert-card glass-panel">
+              <div class="cert-icon ibm-blue"><i class="ri-code-box-line"></i></div>
+              <div class="cert-body">
+                <h4>Python Programming Certification</h4>
+                <p class="cert-issuer">IBM Professional Certification</p>
+                <p class="cert-desc">Verified proficiency in advanced Python data structures, algorithms, and computational modeling.</p>
+              </div>
+            </div>
+
+            <div class="cert-card glass-panel">
+              <div class="cert-icon ibm-blue"><i class="ri-database-2-line"></i></div>
+              <div class="cert-body">
+                <h4>SQL Relational Database Certification</h4>
+                <p class="cert-issuer">IBM Professional Certification</p>
+                <p class="cert-desc">Demonstrated mastery in relational database design, query optimization, indexing, and normalization.</p>
+              </div>
+            </div>
+
+            <div class="cert-card glass-panel">
+              <div class="cert-icon tap-orange"><i class="ri-cup-line"></i></div>
+              <div class="cert-body">
+                <h4>Java Full Stack Course Certification</h4>
+                <p class="cert-issuer">Tap Academy Bangalore</p>
+                <p class="cert-desc">Comprehensive training covering Core Java, Spring Boot, Hibernate ORM, SQL, and enterprise REST APIs.</p>
+              </div>
+            </div>
+
+            <div class="cert-card glass-panel">
+              <div class="cert-icon dlk-green"><i class="ri-global-line"></i></div>
+              <div class="cert-body">
+                <h4>Web Development Certification</h4>
+                <p class="cert-issuer">DLK Technologies</p>
+                <p class="cert-desc">Full-cycle modern web architecture, frontend UI engineering, and API integration.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL / CLI -->
+    <section class="section terminal-section" id="terminal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="ri-terminal-box-line"></i> Developer Console</span>
+          <h2 class="section-title">Interactive Terminal CLI</h2>
+          <p class="section-subtitle">Type commands into the simulated shell to explore skills, projects, contact details, or trigger easter eggs.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="terminal-window glass-panel">
+          <div class="terminal-titlebar">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-tab-title"><i class="ri-terminal-line"></i> bash — lakshmikanth@ai-core:~</div>
+            <div class="terminal-actions">
+              <button class="term-btn" onclick="clearTerminal()" title="Clear terminal">clear</button>
+            </div>
+          </div>
+
+          <div class="terminal-body" id="term-output">
+            <p class="term-line-intro">Welcome to <strong>Lakshmikanth's AI Terminal v1.0.0</strong>.</p>
+            <p class="term-line-intro">Type <span class="cmd-highlight">help</span> to view available commands, or try <span class="cmd-highlight">skills</span>, <span class="cmd-highlight">projects</span>, <span class="cmd-highlight">contact</span>, <span class="cmd-highlight">predict</span>, <span class="cmd-highlight">sudo hire</span>.</p>
+            <div class="term-history" id="term-history"></div>
+            
+            <div class="term-input-line">
+              <span class="term-prompt">lakshmikanth@ai-core:~$</span>
+              <input type="text" id="term-input" class="term-input" autocomplete="off" spellcheck="false" autofocus />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="ri-mail-star-line"></i> Get in Touch</span>
+          <h2 class="section-title">Let's Build Intelligent Systems Together</h2>
+          <p class="section-subtitle">Open for AI/ML Engineer roles, full-stack AI development opportunities, and exciting collaborative projects.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Cards Info -->
+          <div class="contact-info-col">
+            <div class="contact-card glass-panel">
+              <div class="contact-icon"><i class="ri-mail-send-fill"></i></div>
+              <div class="contact-details">
+                <span class="contact-label">Email Address</span>
+                <a href="mailto:lakshmikanthmanibolu@gmail.com" class="contact-link" id="email-text">lakshmikanthmanibolu@gmail.com</a>
+              </div>
+              <button class="copy-btn" onclick="copyToClipboard('lakshmikanthmanibolu@gmail.com', this)" title="Copy email address">
+                <i class="ri-file-copy-line"></i>
+              </button>
+            </div>
+
+            <div class="contact-card glass-panel">
+              <div class="contact-icon"><i class="ri-phone-fill"></i></div>
+              <div class="contact-details">
+                <span class="contact-label">Direct Phone / WhatsApp</span>
+                <a href="tel:+919652999701" class="contact-link">+91 9652999701</a>
+              </div>
+              <button class="copy-btn" onclick="copyToClipboard('+919652999701', this)" title="Copy phone number">
+                <i class="ri-file-copy-line"></i>
+              </button>
+            </div>
+
+            <div class="contact-card glass-panel">
+              <div class="contact-icon"><i class="ri-github-fill"></i></div>
+              <div class="contact-details">
+                <span class="contact-label">GitHub Repository Hub</span>
+                <a href="https://github.com/Lakshmikanthmanibolu" target="_blank" rel="noopener noreferrer" class="contact-link">github.com/Lakshmikanthmanibolu</a>
+              </div>
+              <a href="https://github.com/Lakshmikanthmanibolu" target="_blank" rel="noopener noreferrer" class="copy-btn" title="Open GitHub Profile">
+                <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+
+            <div class="contact-card glass-panel">
+              <div class="contact-icon"><i class="ri-map-pin-2-fill"></i></div>
+              <div class="contact-details">
+                <span class="contact-label">Location</span>
+                <span class="contact-link-static">Andhra Pradesh, India (Open to Remote & Relocation)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Message Form -->
+          <div class="contact-form-col">
+            <div class="glass-panel contact-form-wrapper">
+              <h3><i class="ri-send-plane-fill"></i> Send a Direct Message</h3>
+              <form id="contact-form" onsubmit="handleContactSubmit(event)">
+                <div class="form-group">
+                  <label for="contact-name">Your Full Name</label>
+                  <input type="text" id="contact-name" class="form-input" placeholder="e.g. Dr. Alex Mercer / Hiring Manager" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email">Your Work Email</label>
+                  <input type="email" id="contact-email" class="form-input" placeholder="name@company.com" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject">Opportunity / Subject</label>
+                  <input type="text" id="contact-subject" class="form-input" placeholder="AI/ML Engineer Role / Project Collaboration" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message">Message Details</label>
+                  <textarea id="contact-message" class="form-input textarea" rows="4" placeholder="Hello Lakshmikanth, I came across your portfolio and would like to connect regarding..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary-glow btn-block" id="form-submit-btn">
+                  <i class="ri-mail-send-line"></i>
+                  <span>Transmit Message</span>
+                </button>
+
+                <div class="form-status-alert" id="form-status-alert" style="display: none;"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#home" class="footer-logo">
+          <span>&lt;</span>LM<span>/&gt;</span>
+        </a>
+        <p>Engineered with passion by <strong>Lakshmikanth Manibolu</strong>. AI/ML & Full-Stack Solutions.</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#ai-lab">AI Lab</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-right">
+        <p>© <span id="current-year">2026</span> Lakshmikanth Manibolu. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RESUME MODAL VIEWER -->
+  <div class="resume-modal-backdrop" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="modal-resume-title">
+    <div class="resume-modal-container glass-panel">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="ri-file-text-fill"></i>
+          <h3 id="modal-resume-title">Lakshmikanth Manibolu — Professional Resume</h3>
+        </div>
+        <div class="modal-header-actions">
+          <button class="btn btn-primary-glow btn-sm" onclick="window.print()">
+            <i class="ri-printer-line"></i> Print / Save PDF
+          </button>
+          <button class="modal-close-btn" id="resume-close-btn" aria-label="Close resume viewer">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body printable-resume">
+        <div class="resume-sheet">
+          <!-- Resume Header -->
+          <div class="resume-sheet-header">
+            <h2>LAKSHMIKANTH MANIBOLU</h2>
+            <div class="resume-contact-bar">
+              <span><i class="ri-mail-line"></i> lakshmikanthmanibolu@gmail.com</span>
+              <span><i class="ri-phone-line"></i> +91-9652999701</span>
+              <span><i class="ri-github-line"></i> github.com/Lakshmikanthmanibolu</span>
+              <span><i class="ri-map-pin-line"></i> Andhra Pradesh, India</span>
+            </div>
+          </div>
+
+          <!-- Professional Summary -->
+          <div class="resume-section-block">
+            <h4 class="resume-section-heading">PROFESSIONAL SUMMARY</h4>
+            <p>
+              AI/ML Engineer with hands-on experience in deep learning, model development, and end-to-end ML pipeline deployment. Proficient in Python, TensorFlow, PyTorch, and Scikit-learn, with a strong foundation in data preprocessing, feature engineering, and model evaluation. Backed by full-stack development skills (Flask, React.js, Node.js, REST APIs) to independently build and deploy complete AI-powered applications from model to production.
+            </p>
+          </div>
+
+          <!-- Education -->
+          <div class="resume-section-block">
+            <h4 class="resume-section-heading">EDUCATION</h4>
+            <div class="resume-edu-entry">
+              <div class="entry-row">
+                <strong>Sreenivasa Institute of Technology and Management Studies</strong>
+                <span>Andhra Pradesh, India</span>
+              </div>
+              <div class="entry-row sub">
+                <em>Bachelor of Technology – Computer Science Engineering (AIML) | GPA: 7.50</em>
+                <span>Aug 2020 – May 2024</span>
+              </div>
+            </div>
+            <div class="resume-edu-entry">
+              <div class="entry-row">
+                <strong>Vijayam Junior College</strong>
+                <span>Andhra Pradesh, India</span>
+              </div>
+              <div class="entry-row sub">
+                <em>Board of Intermediate Education | GPA: 6.8</em>
+                <span>May 2018 – July 2020</span>
+              </div>
+            </div>
+            <div class="resume-edu-entry">
+              <div class="entry-row">
+                <strong>Sri Chaitanya EM High School</strong>
+                <span>Andhra Pradesh, India</span>
+              </div>
+              <div class="entry-row sub">
+                <em>Board of Secondary Education | GPA: 9.2</em>
+                <span>March 2018</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="resume-section-block">
+            <h4 class="resume-section-heading">TECHNICAL SKILLS</h4>
+            <p><strong>AI/Machine Learning:</strong> Supervised & Unsupervised Learning, Model Training, Model Evaluation, Predictive Modeling, Data Preprocessing, Feature Engineering, Data Cleaning, Data Visualization</p>
+            <p><strong>Deep Learning & Computer Vision:</strong> TensorFlow, PyTorch, Artificial Neural Networks (ANN), Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN), OpenCV, Object Detection, Image Processing</p>
+            <p><strong>Programming & Core CS:</strong> Python, Java, JavaScript, Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP), DBMS</p>
+            <p><strong>ML Libraries & Tools:</strong> Scikit-learn, NumPy, Pandas, Matplotlib, Git, GitHub, Jupyter</p>
+            <p><strong>Full Stack Support Skills:</strong> Flask, React.js, Node.js, Express.js, MongoDB, REST API Development, JWT Authentication, SQL</p>
+          </div>
+
+          <!-- Projects -->
+          <div class="resume-section-block">
+            <h4 class="resume-section-heading">FEATURED PROJECTS</h4>
+            
+            <div class="resume-project-item">
+              <strong>CRM HCP Model — AI-First CRM (HCP Module)</strong>
+              <p class="proj-tech">Technologies: React 19, Redux Toolkit, FastAPI, LangGraph, Groq LLM (gemma2-9b-it), SQLite</p>
+              <ul>
+                <li>Built an AI-powered CRM for logging and managing HCP interactions for pharmaceutical field representatives, featuring a LangGraph ReAct agent with 5 tools to log, edit, search, retrieve interaction history, and suggest talking points.</li>
+                <li>Developed a dual-mode Log Interaction screen combining a structured form with a conversational AI chat interface for natural-language interaction logging.</li>
+                <li>Implemented a FastAPI backend with SQLAlchemy/SQLite persistence and a React + Redux frontend with a dashboard, HCP directory, and interaction history views; deployed live on Vercel. (github.com/Lakshmikanthmanibolu/ai-first-crm)</li>
+              </ul>
+            </div>
+
+            <div class="resume-project-item">
+              <strong>Heart Disease Prediction using Deep Learning</strong>
+              <p class="proj-tech">Technologies: Python, RNN, Flask API, HTML, CSS, JavaScript</p>
+              <ul>
+                <li>Developed a deep learning–based heart disease prediction system using an RNN model, achieving 95% prediction accuracy through systematic data preprocessing, feature engineering, and model tuning.</li>
+                <li>Built and integrated a Flask REST API to deploy the trained model, enabling real-time prediction and seamless communication between backend and frontend.</li>
+                <li>Designed a responsive, user-friendly web interface using HTML, CSS, and JavaScript for intuitive data input and prediction visualization.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Internships -->
+          <div class="resume-section-block">
+            <h4 class="resume-section-heading">INTERNSHIPS & WORK EXPERIENCE</h4>
+            <div class="resume-job-item">
+              <div class="entry-row">
+                <strong>AI/ML Intern — Innovate</strong>
+                <span>Remote | Jan 2024 – May 2024</span>
+              </div>
+              <ul>
+                <li>Gained hands-on experience in machine learning, deep learning, data preprocessing, feature engineering, model training, and evaluation using Python, Pandas, NumPy, Scikit-learn, and TensorFlow.</li>
+                <li>Analyzed datasets and built predictive models, improving model performance through data-driven techniques.</li>
+              </ul>
+            </div>
+
+            <div class="resume-job-item">
+              <div class="entry-row">
+                <strong>Java Full Stack Web Development — Tap Academy</strong>
+                <span>Bangalore | Jun 2024 – Dec 2024</span>
+              </div>
+              <ul>
+                <li>Gained hands-on experience in Core Java, JDBC, SQL, Spring Boot, Hibernate, and REST APIs, applying OOP principles in a full-stack development environment.</li>
+              </ul>
+            </div>
+
+            <div class="resume-job-item">
+              <div class="entry-row">
+                <strong>Web Development Intern — Internselite</strong>
+                <span>Remote | May 2026 – Jul 2026</span>
+              </div>
+              <ul>
+                <li>Built and maintained responsive UI components and REST API integrations, strengthening the full-stack foundation behind independently deployed AI applications.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Certifications -->
+          <div class="resume-section-block">
+            <h4 class="resume-section-heading">CERTIFICATIONS & AWARDS</h4>
+            <ul>
+              <li>Java Full Stack Course — Tap Academy</li>
+              <li>Python Programming Certification — IBM</li>
+              <li>SQL Relational Database Certification — IBM</li>
+              <li>Web Development — DLK Technologies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
